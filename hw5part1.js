@@ -17,6 +17,6 @@ $(document).ready(function() {
 
 function validate() {
     if ($('#medical_form').valid()) {
-        window.open("hw5p1.2.html", "_top")
+        window.open("https://fvargas78.github.io/hw5part1/", "_top")
     }
 }
