@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-    <script src="hw5part1.js" async></script>
+    <script src="js5part1.js" async></script>
 </head>
 <body>
 
@@ -51,28 +51,25 @@
 
   <div>
     <label>How often do you exercise?</label>
-    <input type="radio" id="Regularly" name="Regularly">
+    <input type="radio" id="Regularly" name="exercise_level">
       <label for="Regularly" class="option">Regularly</label>
-    <input type="radio" id="Occasionally" name="Occasionally">
+    <input type="radio" id="Occasionally" name="exercise_level">
       <label for="past_smoker" class="option">Occasionally</label>
-    <input type="radio" id="Infrequent" name="Infrequent">
+    <input type="radio" id="Infrequent" name="exercise_level">
       <label for="Infrequent" class="option">Infrequent</label>
   </div>
 
   <div>
     <label>what sport do you like to practice?</label><br>
-    <input type="checkbox" id="asthma" name="medical_history"><label for="asthma" class="option">Football</label><br>
-    <input type="checkbox" id="angina" name="medical_history"><label for="angina" class="option">Golf</label><br>
-    <input type="checkbox" id="copd" name="medical_history">
-      <label for="copd" class="option">Tennis</label><br>
-    <input type="checkbox" id="chf" name="medical_history">
-      <label for="chf" class="option">Baseball</label><br>
-    <input type="checkbox" id="dm1" name="medical_history"><label for="dm1" class="option">Swimming</label><br>
-    <input type="checkbox" id="dm2" name="medical_history"><label for="dm2" class="option">Running</label><br>
-    <input type="checkbox" id="depression" name="medical_history">
-      <label for="depression" class="option">Crossfit</label><br>
-    <input type="checkbox" id="other" name="medical_history"><label for="other" class="option">Gym</label><br>
-    <input type="checkbox" id="none" name="medical_history"><label for="none" class="option">None</label>
+    <input type="checkbox" id="football" name="favorite_sport"><label for="football" class="option">Football</label><br>
+    <input type="checkbox" id="golf" name="favorite_sport"><label for="golf" class="option">Golf</label><br>
+    <input type="checkbox" id="tennis" name="favorite_sport"><label for="tennis" class="option">Tennis</label><br>
+    <input type="checkbox" id="baseball" name="favorite_sport"><label for="baseball" class="option">Baseball</label><br>
+    <input type="checkbox" id="swimming" name="favorite_sport"><label for="swimming" class="option">Swimming</label><br>
+    <input type="checkbox" id="running" name="favorite_sport"><label for="running" class="option">Running</label><br>
+    <input type="checkbox" id="crossfit" name="favorite_sport"><label for="crossfit" class="option">Crossfit</label><br>
+    <input type="checkbox" id="gym" name="favorite_sport"><label for="gym" class="option">Gym</label><br>
+    <input type="checkbox" id="none" name="favorite_sport"><label for="none" class="option">None</label>
   </div>
 
   <input type="button" value="Submit" onclick="validate(this.form);">
