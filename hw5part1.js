@@ -4,8 +4,8 @@ $(document).ready(function() {
             {
                 fname: {required: true},
                 lname: {required: true},
-                smoking_status: {required: true},
-                medical_history: {required: true},
+                exercise_level: {required: true},
+                favorite_sport: {required: true},
             },
         errorElement: "div",
         errorPlacement: function(error, element) {
