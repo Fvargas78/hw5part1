@@ -17,6 +17,6 @@ $(document).ready(function() {
 
 function validate() {
     if ($('#medical_form').valid()) {
-        window.open("hm5p1.2.html", "_top")
+        window.open("hw5p1.2.html", "_top")
     }
 }
