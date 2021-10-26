@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 		messages: {
 			name1: "Please enter your name",
-            rating: "Please choose your gender",
-            occup: "how often do you exercise",
-            ethnicity: "Please choose your favorite hobbie",
+            rating: "Please rate your helth",
+            occup: "please enter your occupation",
+            ethnicity: "Please enter your ethnicity",
 	    },
 
   /* the following is needed to place an error msg after the radio and checkbox elements */
