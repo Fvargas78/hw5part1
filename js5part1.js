@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#myform").validate({
 
 		messages: {
-			fname: "Please enter your name",
+	    fname: "Please enter your name",
             gender: "Please choose your gender",
             exercise: "how often do you exercise",
             hobbies: "Please choose your favorite hobbie",
