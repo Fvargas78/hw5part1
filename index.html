@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-    <script src="hw5part1.js" async></script>
+    <script src="js5part1.js" async></script>
 </head>
 <body>
 
@@ -31,17 +31,17 @@
         <li><a class="w3-btn" href="https://fvargas78.github.io/hw7/">Homework7</a></li>
         <li><a class="w3-btn" href="https://fvargas78.github.io/hw8/">Homework8</a></li>
     </ul>
-    
-   <form id="medical_form" name="medical_form">
-  <div>
-    <label for="fname">First Name: </label><input type = "text" id = "fname" name="fname"><br>
-    <label for="lname">Last  Name: </label><input type = "text" id = "lname" name="lname">
-  </div>
-
+    <h2>part 1</h2>
+    <p><strong>Please fill our this form about yourself:</strong></p>
+   
+    <form action="hw5-alertOK.html" method="post" id="myform" name="myform">
+        <div>
+    <label for="fname">Full Name: </label><input type = "text" id = "fname" name="fname"><br>
+        </div>
   <div>
     <label for="gender">Gender: </label>
     <select id="gender" required>
-      <option value="">Choose...</option>
+      <option value="">Choices...</option>
       <option>Male</option>
       <option>Female</option>
       <option>Non-binary</option>
@@ -51,7 +51,7 @@
 
   <div>
     <label>How often do you exercise?</label>
-    <input type="radio" id="Regularly" name="exercise_level">
+    <input type="radio" id="exercise" name="exercise">
       <label for="Regularly" class="option">Regularly</label>
     <input type="radio" id="Occasionally" name="exercise_level">
       <label for="past_smoker" class="option">Occasionally</label>
@@ -60,20 +60,19 @@
   </div>
 
   <div>
-    <label>what sport do you like to practice?</label><br>
-    <input type="checkbox" id="football" name="favorite_sport"><label for="football" class="option">Football</label><br>
-    <input type="checkbox" id="golf" name="favorite_sport"><label for="golf" class="option">Golf</label><br>
-    <input type="checkbox" id="tennis" name="favorite_sport"><label for="tennis" class="option">Tennis</label><br>
-    <input type="checkbox" id="baseball" name="favorite_sport"><label for="baseball" class="option">Baseball</label><br>
-    <input type="checkbox" id="swimming" name="favorite_sport"><label for="swimming" class="option">Swimming</label><br>
-    <input type="checkbox" id="running" name="favorite_sport"><label for="running" class="option">Running</label><br>
-    <input type="checkbox" id="crossfit" name="favorite_sport"><label for="crossfit" class="option">Crossfit</label><br>
-    <input type="checkbox" id="gym" name="favorite_sport"><label for="gym" class="option">Gym</label><br>
-    <input type="checkbox" id="none" name="favorite_sport"><label for="none" class="option">None</label>
+    <label>what is your favorite hobbie?</label><br>
+    <input type="checkbox" id="movies" name="hobbies"><label for="movies" class="option">Movies</label><br>
+    <input type="checkbox" id="books" name="hobbies"><label for="books" class="option">Books</label><br>
+    <input type="checkbox" id="music" name="hobbies"><label for="music" class="option">Music</label><br>
+    <input type="checkbox" id="videogames" name="hobbies"><label for="videogames" class="option">Videogames</label><br>
+    <input type="checkbox" id="other" name="hobbies"><label for="other" class="option">Other</label><br>
+    <input type="checkbox" id="none" name="hobbies"><label for="none" class="option">None</label>
   </div>
 
-  <input type="button" value="Submit" onclick="validate(this.form);">
-</form>
+    <input type="submit" id="process" name="submit" value="Submit">
+    <input type="button" id="reset" name="reset" onclick="location.reload()" value="Reset"><br><br>
+
+  </form>
 
 </body>
 </html>
