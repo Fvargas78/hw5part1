@@ -20,3 +20,7 @@ $(document).ready(function(){
   } // end errorPlacement
  }); 
 });
+
+function myform() {
+        alert("Thank you for submitting the information ");
+    }
