@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style5.css"/>
     <style>
     label {
-    color: none;
+    color: yellow;
     font-style: italic;
 }
      </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <script src="js5part1.js" async></script>
@@ -37,47 +37,42 @@
         <li><a class="w3-btn" href="https://fvargas78.github.io/hw8/">Homework8</a></li>
     </ul>
     <h2>part 1</h2>
-    <p><strong>Please fill our this form about yourself:</strong></p>
-   
-    <form action="hw5-alertOK.html" method="post" id="myform" name="myform">
-        <div>
-    <label for="fname">Full Name: </label><input type = "text" id = "fname" name="fname"><br>
-        </div>
-  <div>
-    <label for="gender">Gender: </label>
-    <select id="gender" required>
-      <option value="">Choices...</option>
-      <option>Male</option>
-      <option>Female</option>
-      <option>Non-binary</option>
-      <option>Other</option>
-    </select>
-  </div>
+    <p><strong>Please fill our this form:</strong></p>
+   <form action="hw5-alertOK.html" method="post" id="myform" name="myform">
+            
+    <div name="name" id="name">Your name:<br><input type="text" name="name1" id="name1" size="20" class="required" autofocus><br>
+     </div><br>
+            
+       <div>Rate your health:<br>
+        Good<input type="radio" id="rating1" name="rating" class="required" value="good">
+        Average<input type="radio" id="rating2" name="rating" value="average">
+        Poor<input type="radio" id="rating3" value="poor" name="rating">
+        <br></div>
+       <br>
+        <div>Occupation: <br>
+            Student<input type="checkbox" id="occupation" name="occup" value="student" class="required">
+            Full-Time Worker<input type="checkbox" id="full time" value="Web Developer" name="occup">
+            Part-time Worker<input type="checkbox" id="part time" value="part time" name="occup">
+            Unemployed<input type="checkbox" id="unemployed" value="unemployed" name="occup">
+        <br>
+          </div>
+            <br>
+            <div>Ethnicity:<br>
+            <select name="ethnicity" id="ethnicity" class="required">
+                <option value="">-Choose one-</option>
+                <option value="hispanic">Hispanic</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="asian">Asian</option>
+                <option value="other">Other</option>
+            </select><br>
+            </div><br>
+            
+            <input type="submit" id="process" name="submit" value="SUBMIT">
+            <input type="button" id="reset" name="reset" onclick="location.reload()" value="RESET"><br><br>
 
-  <div>
-    <label>How often do you exercise?</label>
-    <input type="radio" id="exercise" name="exercise">
-      <label for="Regularly" class="option">Regularly</label>
-    <input type="radio" id="Occasionally" name="exercise_level">
-      <label for="past_smoker" class="option">Occasionally</label>
-    <input type="radio" id="Infrequent" name="exercise_level">
-      <label for="Infrequent" class="option">Infrequent</label>
-  </div>
-
-  <div>
-    <label>what is your favorite hobbie?</label><br>
-    <input type="checkbox" id="movies" name="hobbies"><label for="movies" class="option">Movies</label><br>
-    <input type="checkbox" id="books" name="hobbies"><label for="books" class="option">Books</label><br>
-    <input type="checkbox" id="music" name="hobbies"><label for="music" class="option">Music</label><br>
-    <input type="checkbox" id="videogames" name="hobbies"><label for="videogames" class="option">Videogames</label><br>
-    <input type="checkbox" id="other" name="hobbies"><label for="other" class="option">Other</label><br>
-    <input type="checkbox" id="none" name="hobbies"><label for="none" class="option">None</label>
-  </div>
-
-    <input type="submit" id="process" name="submit" value="Submit">
-    <input type="button" id="reset" name="reset" onclick="location.reload()" value="Reset"><br><br>
-
-  </form>
-
-</body>
+        </form>
+    </body>
+    
 </html>
+    
