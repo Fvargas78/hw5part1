@@ -21,6 +21,8 @@ $(document).ready(function(){
  }); 
 });
 
-function myform() {
-        alert("Thank you for submitting the information ");
+function validate() {
+    if ($('#myform').valid()) {
+        window.open("https://fvargas78.github.io/hw5/", "_top")
     }
+}
