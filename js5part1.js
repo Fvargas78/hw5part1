@@ -23,6 +23,6 @@ $(document).ready(function(){
 
 function validate() {
     if ($('#myform').valid()) {
-        window.open("https://fvargas78.github.io/hw5/", "_top")
+        window.open("https://fvargas78.github.io/hw5part1.2/","_top")
     }
 }
