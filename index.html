@@ -38,7 +38,7 @@
     </ul>
     <h2>part 1</h2>
     <p><strong>Please fill our this form:</strong></p>
-   <form id="myform" method="post"  name="myform">
+   <form id="myform"  name="myform">
             
     <div name="name" id="name">Your name:<br><input type="text" name="name1" id="name1" size="20" class="required" autofocus><br>
      </div><br>
@@ -67,13 +67,8 @@
                 <option value="other">Other</option>
             </select><br>
             </div><br>
-            
-            <input type="submit" id="process" name="submit" value="SUBMIT">
-            <input type="button" id="reset" name="reset" onclick="myform()" value="RESET"><br><br>
-
-        </form>
+            <input type="button" value="Submit" onclick="validate(this.form);">
+       </form>
     </body>
-    
 </html>
-    
     
